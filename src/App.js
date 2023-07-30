@@ -1,5 +1,10 @@
 import Landing from "./pages/Landing";
 import Footer from "./components/Card/CardInformasi";
+import Informasi from "./pages/Informasi";
+import Wisata from "./pages/Wisata";
+import UMKM from "./pages/UMKM";
+import Detail from "./pages/Detail";
+import Login from "./pages/Login";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
@@ -19,7 +24,6 @@ class App extends React.Component {
       }
     });
   }
-
   render() {
     return (
       <>
@@ -27,12 +31,11 @@ class App extends React.Component {
           {/* <ScrollToTop /> */}
           <Routes>
             <Route path="/" element={<Landing />} />
-            {/* <Route path="/tentang" element={<Tentang />} />
-            <Route path="/Kabinet/:id" element={<Departement />} exact />
-            <Route path="/KabarFilkom" element={<KabarFilkom />} />
-            <Route path="/Kabinet" element={<Kabinet />} />
-            <Route path="/KabarProker" element={<KabarProker />} exact />
-            <Route path="/KabarProker/:id" element={<Proker />} /> */}
+            <Route path="/informasi" element={<Informasi />} />
+            <Route path="/umkm" element={<UMKM />} />
+            <Route path="/wisata" element={<Wisata />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/Detail/:status" element={<Detail />} />
           </Routes>
         </HashRouter>
       </>

@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="">
           <nav className="p-0 flex justify-between items-center px-4" id="nav-menu">
             <div className="justify-start flex items-center">
-            <img src={Logo} className="w-20 hidden md:flex"/>
+            <img src={Logo} className="w-16 hidden md:flex"/>
               <h1 className="text-black text-2xl mx-2">Desa Sumberpucung</h1>
             </div>
             <div className="flex items-end mx-10 md:hidden justify-end">
@@ -66,7 +66,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/"
                     className={`${
                       location === ""
                         ? "text-black text-sm"
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/"
                     className={`${
                       location === ""
                         ? "text-black text-sm"
@@ -91,7 +91,7 @@ const Navbar = () => {
                 
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/Informasi"
                     className={`${
                       location === ""
                         ? "text-black text-sm"
@@ -103,7 +103,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/umkm"
                     className={`${
                       location === ""
                         ? "text-black text-sm"
@@ -115,7 +115,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/wisata"
                     className={`${
                       location === ""
                         ? "text-black text-sm"
@@ -127,11 +127,11 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/login"
                     className={`${
                       location === ""
-                        ? "text-black text-sm"
-                        : "text-black text-sm"
+                        ? "text-sm border-2 border-primary text-primary hover:bg-primary py-2 px-6 hover:text-white rounded-md"
+                        : "text-sm border-2 border-primary text-primary hover:bg-primary py-2 px-6 hover:text-white rounded-md"
                     } mx-4`}
                   >
                     Masuk

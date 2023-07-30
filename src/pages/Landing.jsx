@@ -87,7 +87,7 @@ const Landing = () => {
       <Navbar />
       <div className="bg-LandingPic bg-cover bg-no-repeat h-[100vh]">
         <div className="bg-black bg-opacity-30 flex justify-center items-left flex-col pl-24 font-semibold text-white text-2xl h-screen">
-          <h1 className="animate-text bg-gradient-to-r from-white via-blue-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">
+          <h1 className="animate-text bg-gradient-to-r from-white via-primary-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">
             Selamat Datang!
           </h1>
           <h1>Desa Sumberpucung, Sumberpucung Jawa Timur</h1>
@@ -99,6 +99,7 @@ const Landing = () => {
         <div className="judul text-center py-8">
           <h1 className="text-4xl font-bold">Tentang</h1>
           <h2 className="text-2xl pt-2">Desa Sumberpucung</h2>
+          {/* <hr className="rounded-lg border-2 my-4 bg-primary border-primary"/> */}
         </div>
         <div className="flex px-12 items-center flex-wrap flex-col md:flex-row justify-between">
           <p className="w-full md:w-1/2">
@@ -113,11 +114,11 @@ const Landing = () => {
       </div>
 
       {/* visi */}
-      <div className="flex justify-between bg-primary my-12 px-24 py-12 font-semibold flex-wrap flex-col md:flex-row">
-        <div className="mr-0 md:mr-12">
+      <div className="flex justify-between bg-primary my-12 md:px-24 py-12 font-semibold flex-wrap flex-col md:flex-row">
+        <div className="mr-0 md:mr-12 text-white text-center md:text-start">
           <h1 className="text-4xl">Visi dan Misi </h1>
           <h2 className="text-2xl">Desa Sumberpucung</h2>
-          <div className="max-w-[70vh] px-8 sm:px-0 flex justify-start mt-6">
+          <div className="max-w-[70vh] md:px-8 sm:px-0 flex justify-start mt-6 ">
             <div>
               <div
                 role="tablist"
@@ -181,7 +182,7 @@ const Landing = () => {
                 
           </div> 
         </div>
-        <div className="justify-end flex">
+        <div className="justify-center md:justify-end flex">
           <img
             src={DescriptionPic}
             alt="Description"
@@ -190,21 +191,22 @@ const Landing = () => {
         </div>
       </div>
       {/* informasi */}
-      <div className="informasi py-6 ">
-        <div className="judul text-center py-8">
-          <h1 className="text-4xl font-bold">Informasi</h1>
-          <h2 className="text-2xl pt-2">
+      <div className="informasi">
+        <div className="judul text-center py-12 ">
+          <h1 className="text-4xl font-bold text-secondary">Informasi</h1>
+          <h2 className="text-black text-lg md:text-xl pt-2 px-12">
             Dapatkan Informasi update seputar Kegiatan Desa Sumberpucung disini.
           </h2>
+          <hr className="rounded-lg border-2 my-4 border-secondary mx-96"/>
         </div>
-        <div className="flex justify-center mx-24 flex-wrap">
-          <CardInformasi />
-          <CardInformasi />
-          <CardInformasi />
+        <div className="flex justify-center mx-12 md:mx-24 flex-wrap text-center md:text-start items-center">
+          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
+          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
+          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
         </div>
         <Link
           to="/"
-          className="flex justify-center my-4 bg-2 mx-auto rounded-lg py-2 w-1/4 font-medium"
+          className="flex justify-center my-12 bg-secondary text-white md:mx-auto rounded-lg py-2 md:w-1/4  font-medium mx-12"
         >
           Informasi Lainnya
         </Link>
@@ -214,8 +216,8 @@ const Landing = () => {
       <div className="umkm p-12 bg-primary text-white">
         <h1 className="text-4xl font-bold">UMKM</h1>
         <h2 className="text-2xl">Desa Sumberpucung</h2>
-
-        <div className="flex justify-center mx-24 flex-wrap my-6">
+        <hr className="rounded-lg border-2 my-4 border-tertiary w-36"/>
+        <div className="flex justify-center md:mx-24 flex-wrap my-6">
           <CardUMKM />
           <CardUMKM />
           <CardUMKM />
@@ -224,7 +226,7 @@ const Landing = () => {
         </div>
         <Link
           to="/"
-          className="flex justify-center my-4 bg-white text-black mx-auto rounded-lg py-2 w-1/4 font-medium"
+          className="flex justify-center my-4 bg-white text-black mx-auto rounded-lg py-2 md:w-1/4 font-medium"
         >
           UMKM Lainnya
         </Link>
@@ -234,6 +236,7 @@ const Landing = () => {
       <div className="umkm p-12">
         <h1 className="text-4xl font-bold">Wisata</h1>
         <h2 className="text-2xl">Desa Sumberpucung</h2>
+        <hr className="rounded-lg border-2 my-4 bg-primary border-primary w-36"/>
         <div className="flex justify-center items-center">
           <div
             id="default-carousel"
@@ -393,7 +396,7 @@ const Landing = () => {
         </div>
         <Link
           to="/"
-          className="flex justify-center my-4 bg-2 mx-auto rounded-lg py-2 w-1/4 font-medium"
+          className="flex justify-center my-4 bg-secondary text-white mx-auto rounded-lg py-2 md:w-1/4 font-medium"
         >
           Wisata Lainnya
         </Link>
