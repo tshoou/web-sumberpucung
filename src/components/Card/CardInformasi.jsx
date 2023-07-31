@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import cardPic from "../../img/IMG_0331.jpg";
+import cardPic from "../../img/sejarah.jpg";
 
 const CardInformasi = ({ status, linkMedia, titleInformasi, descInformasi }) => {
   const [wisata, setWisata] = useState(false);

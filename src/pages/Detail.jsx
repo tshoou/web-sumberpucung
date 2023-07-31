@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import DetailPic from "../img/Frame 3.png";
+import DetailPic from "../img/visi-misi.jpg";
 import { useParams } from "react-router-dom";
 
 const Detail = () => {

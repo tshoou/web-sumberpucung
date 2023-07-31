@@ -66,31 +66,6 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/"
-                    className={`${
-                      location === ""
-                        ? "text-black text-sm"
-                        : "text-black text-sm"
-                    } mx-4`}
-                  >
-                    Sekilas
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/"
-                    className={`${
-                      location === ""
-                        ? "text-black text-sm"
-                        : "text-black text-sm"
-                    } mx-4`}
-                  >
-                    Visi dan Misi
-                  </NavLink>
-                </li>
-                
-                <li>
-                  <NavLink
                     to="/Informasi"
                     className={`${
                       location === ""

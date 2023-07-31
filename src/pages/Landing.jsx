@@ -2,13 +2,15 @@
 import Navbar from "../components/Navbar/Navbar";
 import react,  {useEffect, useRef, useState}from "react";
 import { Link } from "react-router-dom";
-import DescriptionPic from "../img/descriptions.jpg";
+import DescriptionPic from "../img/balai-desa-sumberpucung.jpg";
+import VisiMisiPic from "../img/visi-misi.jpg";
 import CardInformasi from "../components/Card/CardInformasi";
 import CardUMKM from "../components/Card/CardUMKM";
 import Footer from "../components/Footer/Footer";
 import flowbite from "flowbite";
 import axios from "axios"
-import picSlider from "../img/IMG_0331.jpg";
+import picSlider from "../img/kedung-gopit.jpg";
+import picSlider2 from "../img/kedung-gopit-kolam.jpg";
 const Landing = () => {
   // const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState([])
@@ -184,7 +186,7 @@ const Landing = () => {
         </div>
         <div className="justify-center md:justify-end flex">
           <img
-            src={DescriptionPic}
+            src={VisiMisiPic}
             alt="Description"
             className="max-w-[60vh] max-h-[80vh]"
           />
@@ -195,14 +197,14 @@ const Landing = () => {
         <div className="judul text-center py-12 ">
           <h1 className="text-4xl font-bold text-secondary">Informasi</h1>
           <h2 className="text-black text-lg md:text-xl pt-2 px-12">
-            Dapatkan Informasi update seputar Kegiatan Desa Sumberpucung disini.
+            Dapatkan Informasi update seputar Desa Sumberpucung disini.
           </h2>
           <hr className="rounded-lg border-2 my-4 border-secondary mx-96"/>
         </div>
         <div className="flex justify-center mx-12 md:mx-24 flex-wrap text-center md:text-start items-center">
-          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
-          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
-          <CardInformasi titleInformasi="Sejarah" descInformasi="Pertama, wilayah Desa Dilem ini dulunya merupakan 'kaputren' , yaitu suatu tempat tinggal ..."/>
+          <CardInformasi titleInformasi="Sejarah Desa Sumberpucung" descInformasi="Di suatu tempat ada sebuah sumber air yang letaknya mudah dijangkau. Persis di atas lokasi ..."/>
+          <CardInformasi titleInformasi="Sejarah Desa Sumberpucung" descInformasi="Di suatu tempat ada sebuah sumber air yang letaknya mudah dijangkau. Persis di atas lokasi ..."/>
+          <CardInformasi titleInformasi="Sejarah Desa Sumberpucung" descInformasi="Di suatu tempat ada sebuah sumber air yang letaknya mudah dijangkau. Persis di atas lokasi ..."/>
         </div>
         <Link
           to="/"
@@ -262,7 +264,7 @@ const Landing = () => {
                 data-carousel-item
               >
                 <img
-                  src={picSlider}
+                  src={picSlider2}
                   alt="missing img"
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
@@ -286,7 +288,7 @@ const Landing = () => {
                 data-carousel-item
               >
                 <img
-                  src={picSlider}
+                  src={picSlider2}
                   alt="missing img"
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
